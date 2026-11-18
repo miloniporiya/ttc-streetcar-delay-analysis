@@ -1,0 +1,22 @@
+route,incidents,total_minutes,avg_delay
+501 Queen,3409,71575,21.0
+504 King,3362,68388,20.3
+505 Dundas,2593,56967,22.0
+506 Carlton,2479,56573,22.8
+503 Kingston Road,1593,28364,17.8
+512 St. Clair,1361,24380,17.9
+510 Spadina,1410,20217,14.3
+511 Bathurst,858,17485,20.4
+507 Long Branch,713,14016,19.7
+509 Harbourfront,479,10041,21.0
+301 Queen Night,195,5823,29.9
+306 Carlton Night,132,3780,28.6
+304 King Night,123,3465,28.2
+508 Lakeshore,92,3464,37.7
+305 Dundas Night,116,3045,26.2
+312 St. Clair Night,26,1693,65.1
+303 Kingston Road Night,35,1501,42.9
+310 Spadina Night,53,1327,25.0
+311 Night,3,158,52.7
+309 Harbourfront Night,2,140,70.0
+502 Downtowner,1,5,5.0
