@@ -2,7 +2,7 @@
 
 Analysis of 19,000+ Toronto streetcar delays (Jan 2025 to Sep 2026) to find which routes, times, locations and causes cost riders the most time.
 
-**Tools:** Python, Pandas, SQL (SQLite), Matplotlib, Jupyter
+**Used both Pandas and SQL** throughout, and verified that key results match
 
 **Data:** [TTC Streetcar Delay Data](https://open.toronto.ca/dataset/ttc-streetcar-delay-data/), City of Toronto Open Data
 
