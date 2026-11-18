@@ -2,11 +2,11 @@
 
 Analysis of 19,000+ Toronto streetcar delays (Jan 2025 to Sep 2026) to find which routes, times, locations and causes cost riders the most time.
 
-**Used both Pandas and SQL** throughout, and verified that key results match
+**Tools:** Python, Pandas, SQL (SQLite), Matplotlib, Jupyter
 
 **Data:** [TTC Streetcar Delay Data](https://open.toronto.ca/dataset/ttc-streetcar-delay-data/), City of Toronto Open Data
 
-I also built a Power BI dashboard on the same dataset. This project repeats the analysis in Python and SQL.
+I also built a [Power BI dashboard](https://github.com/miloniporiya/ttc-powerbi-dashboard) on the same dataset.
 
 ![Hours of delay by route](charts/01_hours_by_route.png)
 
@@ -28,7 +28,7 @@ I also built a Power BI dashboard on the same dataset. This project repeats the 
 2. **Found data quality issues:** 204 spellings of route names, 999-minute placeholder delays, blank directions, duplicate rows
 3. **Cleaned** the data using documented rules
 4. **Created new features:** hour, month, time-of-day period, weekend flag, day/night service
-5. **Answered each question in both Pandas and SQL** and checked the results match
+5. **Used both Pandas and SQL** throughout, and verified that key results match
 6. **Investigated an outlier** (Feb 2025) using daily counts and news sources
 7. **Wrote insights, recommendations and limitations**
 
@@ -42,6 +42,9 @@ I also built a Power BI dashboard on the same dataset. This project repeats the 
 | Delays over 300 min (e.g. 999) | Excluded from delay analysis as likely placeholders |
 | Missing or invalid direction | Set to "Unknown" |
 | 20 duplicate rows | Removed |
+| Truncated night route names (e.g. "Nigh") | Standardized so all 300-series routes end in "Night" |
+| Vehicle number 0 | Set to missing (not a real vehicle) |
+
 
 ### Skills used
 
@@ -53,8 +56,11 @@ I also built a Power BI dashboard on the same dataset. This project repeats the 
 - Incident codes are abbreviations. Joining the TTC code lookup table would add descriptions.
 - Locations show where a delay was recorded, not always where it started.
 
+
 ## How to run
 
+```
 pip install pandas matplotlib jupyter
+```
 
-Then open `my_analysis.ipynb` and click Run All.
+Then open `my_analysis.ipynb` and click **Run All**.
